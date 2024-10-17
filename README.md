@@ -46,4 +46,12 @@ To run this project locally:
 3. Open the `index.html` file in your browser.
 
 ## Project Structure
-guess-my-number/ │ ├── index.html # The HTML file for the game interface ├── style.css # The CSS file for styling ├── script.js # JavaScript file containing the game logic └── README.md # Project README file
+guess-my-number/ │
+
+├── index.html # The HTML file for the game interface
+
+├── style.css # The CSS file for styling 
+
+├── script.js # JavaScript file containing the game logic
+
+└── README.md # Project README file
