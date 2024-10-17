@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.between {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.number {
+  background-color: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin: 1.5rem auto;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guess {
+  font-family: inherit;
+  font-size: 3rem;
+  text-align: center;
+  width: 12rem;
+  padding: 1rem;
+  border: 2px solid #eee;
+  background-color: transparent;
+  color: white;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; 
+}
+
+.decrease, .increase {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.decrease:hover, .increase:hover {
+  background-color: #45a049;
+}
+
+.spacing {
+  margin-bottom: 1.5rem; 
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.right {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.message {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #ffcc00;
+  transition: color 0.3s;
+}
+
+.label-score, .label-highscore {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.score, .highscore {
+  font-size: 2.5rem;
+  color: #60b347;
+  transition: color 0.3s;
+}
+
+body.win .number {
+  background-color: #60b347;
+  color: white;
+  transition: background-color 0.4s;
+}
+
+body.win .score {
+  color: #ffcc00; 
+}
+body.win .highscore {
+  color: #ffcc00; 
+}
+
+body.win {
+  background-color: #60b347;
+  transition: background-color 0.4s;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .number {
+    font-size: 5rem;
+  }
+
+  .guess {
+    font-size: 2.5rem;
+    width: 10rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+  }
+}
