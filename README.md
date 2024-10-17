@@ -46,7 +46,7 @@ To run this project locally:
 3. Open the `index.html` file in your browser.
 
 ## Project Structure
-guess-my-number/ │
+Guess-My-Number-Web-Application-Project/ │
 
 ├── index.html # The HTML file for the game interface
 
